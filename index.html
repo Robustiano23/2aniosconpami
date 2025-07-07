@@ -10,33 +10,89 @@
 <header class="encabezado">
   <h1>- “Dos años, miles de instantes”
 </h1>
+
+<nav class="navegacion">
+  <ul>
+    <li><a href="#galeria">📸 Momentos</a></li>
+    <li><a href="#historia">📖 Historia</a></li>
+    <li><a href="#complicidad">🤝 Complicidad</a></li>
+    <li><a href="#tema">🎧 Canción</a></li>
+  </ul>
+</nav>
+
+
 </header>
 
   <!-- 🎯 Main con secciones -->
   <main>
-    <section class="galeria">
+    <section class="galeria" id="galeria">
       <h2>📸 Nuestros Momentos</h2>
       <div class="imagenes">
-        <img src="image/foto1.jpg" alt="Momento 1" />
-        <img src="image/foto2.jpeg" alt="Momento 2" />
-        <img src="image/foto3.jpeg" alt="Momento 3" />
-        <img src="image/foto4.jpeg" alt="">
-        <img src="image/foto5.jpg" alt="">
-        <img src="image/foto6.jpeg" alt="">
-        <img src="image/foto7.jpg" alt="">
-        <img src="image/WhatsApp-Image-2025-07-06-at-23.25.37.jpg" alt="">
-        <img src="image/foto9.jpg" alt="">
-        <img src="image/foto10.jpg" alt="">
-        <img src="image/foto11.jpg" alt="">
-        <img src="image/foto12.jpg" alt="">
-        <video src="video/video1.mp4" controls></video>
+        <a href="image/foto1.jpg" class="lightbox" target="_blank">
+          <img src="image/foto1.jpg" alt="Momento 1" />
+        </a>
+        
+
+        <a href="image/foto2.jpeg" class="lightbox" target="_blank">
+          <img src="image/foto2.jpeg" alt="Momento 2" />
+        </a>
+        
+
+        <a href="image/foto3.jpeg" class="lightbox" target="_blank">
+          <img src="image/foto3.jpeg" alt="Momento 3" />
+        </a>
+        
+
+        <a href="image/foto4.jpeg" class="lightbox" target="_blank">
+          <img src="image/foto4.jpeg" alt="">
+        </a>
+        
+
+        <a href="image/foto5.jpg" class="lightbox" target="_blank">
+          <img src="image/foto5.jpg" alt="">
+        </a>
+        
+        <a href="image/foto6.jpeg" class="lightbox" target="_blank">
+          <img src="image/foto6.jpeg" alt="">
+        </a>
+        
+
+        <a href="image/foto7.jpg" class="lightbox" target="_blank">
+          <img src="image/foto7.jpg" alt="">
+        </a>
+        
+
+        <a href="image/WhatsApp-Image-2025-07-06-at-23.25.37.jpg" class="lightbox" target="_blank">
+          <img src="image/WhatsApp-Image-2025-07-06-at-23.25.37.jpg" alt="">
+        </a>
+        
+        <a href="image/foto9.jpg" class="lightbox" target="_blank">
+          <img src="image/foto9.jpg" alt="">
+        </a>
+        
+        <a href="image/foto10jpg" class="lightbox" target="_blank">
+          <img src="image/foto10.jpg" alt="">
+        </a>
+        
+        <a href="image/foto11.jpg" class="lightbox" target="_blank">
+          <img src="image/foto11.jpg" alt="">
+        </a>
+        
+        <a href="image/foto12.jpg" class="lightbox" target="_blank">
+          <img src="image/foto12.jpg" alt="">
+        </a>
+        
+        <a href="video/video1.mp4" class="lightbox" target="_blank">
+          <video src="video/video1.mp4" controls></video>
+        </a>
+        
 
 
         <!-- más imágenes -->
       </div>
     </section>
 
-    <section class="historia">
+    <section class="historia" id="historia">
       <h2>📖 Cómo comenzó todo</h2>
       <div class="contenido">
         <p>Nos conocimos en aquel lugar que parecía insignificante, nuestra esquinita, pero hoy lo veo como el lugar en donde conoci a mi amor. Cada día desde entonces vivimos muchos recuerdos hermosos.</p>
@@ -44,7 +100,7 @@
       </div>
     </section>
 
-    <section class="complicidad">
+    <section class="complicidad" id="complicidad">
       <h2>🤝 Lo que compartimos</h2>
       <div class="contenido">
         <p>Estoy mas que agradecido por tener tantos recuerdos a tu lado cami, ya sea peleando, molestandonos, riendonos, viendo series, yendo a merendar, agradezco que haya sido con vos, espero que sigamos compartiendo muchas cosas y seguir aprendiendo del otro y apoyarnos mutuamente en nuestras metas.</p>
@@ -52,7 +108,7 @@
       </div>
     </section>
 
-    <section class="tema-favorito">
+    <section class="tema-favorito" id="tema">
   <h2>🎧 Nuestro tema favorito</h2>
   <div class="contenido">
     <img src="image/foto9.jpg" alt="Foto de nosotros" />
@@ -70,6 +126,13 @@
     <p>💌"Gracias por ser parte de cada uno de mis días, pequeña. Feliz segundo aniversario, pami de mi vida 🩵 — Robustiano"</p>
   </footer>
 
-    
+    <button id="modo-btn" class="modo-toggle">🌙</button>
+    <script>
+  const btn = document.getElementById("modo-btn");
+  btn.addEventListener("click", () => {
+    document.body.classList.toggle("modo-noche");
+    btn.textContent = document.body.classList.contains("modo-noche") ? "☀️" : "🌙";
+  });
+</script>
 </body>
 </html>
