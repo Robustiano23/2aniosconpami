@@ -101,9 +101,10 @@ footer p {
 }
 
 .imagenes img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 400px; /* aumentá este valor si querés que se vean más grandes */
+  height: auto;     /* mantiene proporciones reales */
+  object-fit: contain; /* evita que se recorten */
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
